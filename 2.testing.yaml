@@ -1,0 +1,6 @@
+- name: Testing ansible module
+  hosts: web
+  tasks:
+  - name: Testing ansible module
+    ansible.builtin.debug:
+      message: "Test Successfull"
