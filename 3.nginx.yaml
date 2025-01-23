@@ -1,6 +1,6 @@
 - name: Install and start Ngnix
   hosts: web
-  becoms: yes # -b == root user
+  become: yes # -b == root user
   tasks: 
   - name: Install Ngnix
     ansible.builtin.package:
