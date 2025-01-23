@@ -1,0 +1,13 @@
+- name: Install and start Ngnix
+  hosts: web
+  becoms: yes # -b == root user
+  - tasks: Install Ngnix
+    ansible.builtin.package:
+      name: nginx
+      state: present
+  - tasks: Start Ngnix
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
+  
