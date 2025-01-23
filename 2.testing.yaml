@@ -3,4 +3,4 @@
   tasks:
   - name: Testing ansible module
     ansible.builtin.debug:
-      message: "Test Successfull"
+      msg: "Test Successfull"
