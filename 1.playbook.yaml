@@ -1,0 +1,5 @@
+- name: ping
+  hosts: web # ip address of the server or host, whih is availble in inventory file
+  tasks: # task == module == collection
+  - name: pinging the server or host 
+    anisible.builtin.ping: # this module is used to ping the server
