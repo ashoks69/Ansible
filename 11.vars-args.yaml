@@ -1,0 +1,7 @@
+- name: arguments
+  hosts: local
+  conncetion: local
+  tasks:
+  - name: vars passing from args
+    ansible.builtin.debug:
+      msg: "I am a {{ Degi }}"
