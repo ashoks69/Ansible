@@ -1,7 +1,7 @@
-- name: varibales
+- name: variables
   hosts: local
   conncetion: local
   tasks:
-  - name: print varibales
+  - name: print variables
     ansible.builtin.debug:
     msg: "This as Ashok Kumar Simhadri, working as a DevOps Engineer at Value Momentum"
