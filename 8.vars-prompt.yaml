@@ -4,6 +4,7 @@
   vars_prompt:
   - name: name
     prompt: Please enter name
+    private: flase
   - name: designation
     prompt: Please enter designation
   - name: Org
