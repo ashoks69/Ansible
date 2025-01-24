@@ -1,1 +1,7 @@
-- name: 
+- name: managing local server
+  hosts: local
+  conncetion: local
+  tasks:
+    - name: manging local server
+      ansible.builtin.debug:
+        msg: "Test successful from LOCAL"
