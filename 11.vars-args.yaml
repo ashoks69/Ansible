@@ -1,7 +1,15 @@
-- name: ashok
+# - name: ashok
+#   hosts: local
+#   conncetion: local
+#   tasks:
+#   - name: variables passing from args
+#     ansible.builtin.debug:
+#       msg: "I am  {{ name }}"
+
+- name: variables
   hosts: local
-  conncetion: local
+  connection: local
   tasks:
-  - name: variables passing from args
+  - name: print variable
     ansible.builtin.debug:
-      msg: "I am  {{ name }}"
+     msg: "This is {{ name }}"
