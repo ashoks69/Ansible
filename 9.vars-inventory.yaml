@@ -1,6 +1,6 @@
 - name: variables
   hosts: local
   tasks:
-  - name: calling variables from inventory
+  - name: print variables
     ansible.builtin.yamal:
       msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
