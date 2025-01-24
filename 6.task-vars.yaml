@@ -1,10 +1,19 @@
-- name: variables
+- name: variable
   hosts: local
   connection: local
   vars: # Play level Variables
     name: "AshokKumar Simhadri"
     designation: "DevOps Engineer"
     Org: "Value Momentum"
+  tasks:
+  - name: calling variables
+    vars:
+      name: "Vijay Simhadri"
+      designation: "DevOps Engineer"
+      Org: "IBM"
+    ansible.builtin.debug:
+      msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
+
   tasks:
   - name: calling variables
     ansible.builtin.debug:
