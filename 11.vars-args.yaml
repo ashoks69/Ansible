@@ -1,4 +1,4 @@
-- name: arguments
+- name: variables
   hosts: local
   conncetion: local
   tasks:
