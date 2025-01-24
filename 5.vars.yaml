@@ -2,6 +2,6 @@
   hosts: local
   conncetion: local
   tasks:
-  - name: print variable
+  - name: print varibales
     ansible.builtin.debug:
     msg: "This as Ashok Kumar Simhadri, working as a DevOps Engineer at Value Momentum"
