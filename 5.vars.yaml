@@ -1,9 +1,7 @@
-- name: varible
+- name: variable
   hosts: local
-  connection: local
-  vars_files:
-  - vars.yaml
+  conncetion: local
   tasks:
   - name: using variables
     ansible.builtin.debug:
-      msg: "My slef {{ name }}, working as {{ designation }} in {{ Org }}"
+    msg: "This as Ashok Kumar Simhadri, working as a DevOps Engineer at Value Momentum"
