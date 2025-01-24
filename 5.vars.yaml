@@ -1,4 +1,4 @@
-- name: Vars
+- name: calling
   hosts: local
   conncetion: local
   tasks:
