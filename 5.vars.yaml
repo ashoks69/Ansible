@@ -1,8 +1,8 @@
 - name: varible
   hosts: local
   connection: local
-  vars:
-    -vars
+  vars_files:
+  -vars.yaml
   tasks:
     - name: using variables
       ansible.builtin.debug:
