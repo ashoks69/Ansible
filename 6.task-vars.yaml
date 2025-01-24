@@ -9,12 +9,9 @@
   - name: calling variables
     vars:
       name: "Vijay Simhadri"
-      designation: "DevOps Engineer"
-      Org: "IBM"
     ansible.builtin.debug:
       msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
-
-  tasks:
+      
   - name: calling variables
     ansible.builtin.debug:
       msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
