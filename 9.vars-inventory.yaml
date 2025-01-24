@@ -2,5 +2,5 @@
   hosts: local
   tasks:
   - name: print variables
-    ansible.builtin.yamal:
+    ansible.builtin.debug:
       msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
