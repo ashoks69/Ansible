@@ -1,0 +1,14 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: name
+    prompt: Please enter name
+  - name: designation
+    prompt: Please enter designation
+  - name: Org
+    prompt: Please enter Org
+  tasks:
+  - name: prompting variables
+    ansible.builtin.debug:
+     msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
