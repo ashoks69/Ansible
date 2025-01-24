@@ -1,7 +1,7 @@
-- name: managing local server
-  hosts: local
-  conncetion: local
+- name: managing play1 server
+  hosts: play1
+  conncetion: play1
   tasks:
-    - name: manging local server
+    - name: manging play1 server
       ansible.builtin.debug:
-        msg: "Test successful from LOCAL"
+        msg: "Test successful from play1"
