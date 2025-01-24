@@ -4,12 +4,12 @@
   vars_files: # Play level Variables
   - vars.yaml
   tasks:
-  - name: calling variables
+  - name: print information
     vars_files: # task level playbook
     - vars.yaml
     ansible.builtin.debug:
       msg: "This is {{ name1 }}, who is working as {{ designation1 }} at {{ Org1 }}"
 
-  - name: calling variables
+  - name: print information
     ansible.builtin.debug:
       msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
