@@ -1,7 +1,7 @@
-- name: variables
+- name: ashok
   hosts: local
   conncetion: local
   tasks:
-  - name: vars passing from args
+  - name: variables passing from args
     ansible.builtin.debug:
-      msg: "I am a {{ Degi }}"
+      msg: "I am  {{ name }}"
