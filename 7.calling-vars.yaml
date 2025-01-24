@@ -2,15 +2,11 @@
   hosts: local
   connection: local
   vars: # Play level Variables
-    name: "AshokKumar Simhadri"
-    designation: "DevOps Engineer"
-    Org: "Value Momentum"
+  - vars.yaml
   tasks:
   - name: calling variables
     vars: # task level playbook
-      name1: "Vijay Simhadri"
-      designation1: "DevOps Engineer"
-      Org1: "IBM"
+    - vars.yaml
     ansible.builtin.debug:
       msg: "This is {{ name1 }}, who is working as {{ designation1 }} at {{ Org1 }}"
 
