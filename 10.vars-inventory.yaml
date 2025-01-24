@@ -1,0 +1,6 @@
+- name: variables
+  hosts: web
+  tasks:
+  - name: print variable
+    ansible.builtin.debug:
+     msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
