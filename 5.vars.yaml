@@ -2,9 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: "Ashok kumar Simhadri"
-    designation: "DevOps Engineer"
-    Org: "Value Momentum"
+    -vars
   tasks:
     - name: using variables
       ansible.builtin.debug:
