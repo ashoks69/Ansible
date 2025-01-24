@@ -1,0 +1,7 @@
+- name: varible
+  hosts: local
+  connection: local
+  tasks:
+    - name: using variables
+      ansible.builtin.debug:
+        msg: "My slef Ashok Kumar Simhadri, working as DevOps Engineer in Value Momentum"
