@@ -7,11 +7,13 @@
     Org: "Value Momentum"
   tasks:
   - name: calling variables
-    vars:
+    vars: # task level playbook
       name: "Vijay Simhadri"
+      designation: "DevOps Engineer"
+      Org: "IBM"
     ansible.builtin.debug:
       msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
-      
+
   - name: calling variables
     ansible.builtin.debug:
       msg: "This is {{ name }}, who is working as {{ designation }} at {{ Org }}"
