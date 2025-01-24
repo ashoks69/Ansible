@@ -1,0 +1,7 @@
+- name: variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: calling variables
+    ansible.builtin.debug:
+      msg: "This is Ashok Kumar Simhadri, who is working as Devops Engineer at Value Momentum"
