@@ -1,0 +1,11 @@
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: calling
+    ansible.biultin.debug:
+     msg: Good Day {{ item }}
+    loop:
+    - Ashok
+    - Chinnu
+    - Saanvi
