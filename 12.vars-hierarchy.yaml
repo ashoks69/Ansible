@@ -6,7 +6,7 @@
   vars_prompt:
   - name: origin
     prompt: eneter origin data
-    private: flase
+    private: false
   vars:
     origin: this is from PLAY LEVEL 
   tasks:
