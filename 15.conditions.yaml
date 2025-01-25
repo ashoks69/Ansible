@@ -4,7 +4,7 @@
   tasks:
   - name: install Nginx if RHEL
     ansible.builtin.dnf:
-     name: Nginx
+     name: nginx
      state: installed
     when: ansible_os_family == "RedHat"
 
