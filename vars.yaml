@@ -2,6 +2,8 @@ name: "AshokKumar Simhadri"
 designation: "DevOps Engineer"
 Org: "Value Momentum"
 
+origin: "This is from vars.yaml"
+
 # name1: "Vijay Simhadri"
 # designation1: "DevOps Engineer"
 # Org1: "IBM"

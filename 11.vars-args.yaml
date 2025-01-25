@@ -1,11 +1,3 @@
-# - name: ashok
-#   hosts: local
-#   conncetion: local
-#   tasks:
-#   - name: variables passing from args
-#     ansible.builtin.debug:
-#       msg: "I am  {{ name }}"
-
 - name: variables
   hosts: local
   connection: local

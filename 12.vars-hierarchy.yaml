@@ -1,0 +1,17 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: origin
+    prompt: eneter origin data
+    private: flase
+  vars:
+    origin: this is from PLAY LEVEL 
+  tasks:
+  - name: hierarchy of the file
+    vars:
+      origin: this is from TASK Level 
+    ansible.builtin.debug:
+      msg: "This is from {{ origin }}"
