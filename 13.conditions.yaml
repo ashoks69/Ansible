@@ -6,5 +6,15 @@
   tasks:
   - name: comparing numbers
     ansible.builtin.debug:
-     msg: "Given {{ number }} is less than 20"
+     msg: "Given number {{ number }} is less than 20"
     when: number < 20
+
+  - name: comparing numbers
+    ansible.builtin.debug:
+     msg: "Given number {{ number }} is grater than 10"
+    when: number < 10
+  
+  - name: comparing numbers
+    ansible.builtin.debug:
+     msg: "Given number {{ number }} is equal to 10"
+    when: number = 10
