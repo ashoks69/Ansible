@@ -1,8 +1,8 @@
-- name: install softwares
+- name: install packages
   hosts: web
   become: yes
   tasks:
-  - name: install all softwares
+  - name: install packages
     ansible.builtin.package:
       name: "{{ item }}"
       state: installed
